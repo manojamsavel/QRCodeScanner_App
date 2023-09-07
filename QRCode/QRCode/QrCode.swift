@@ -9,7 +9,7 @@ import SwiftUI
 import CodeScanner
 struct QRCodeScannerExampleView: View {
     @State private var PresentingScannerView = false
-    @State private var scannedQRCode: String = "luv u dii thangoo mailu umma"
+    @State private var scannedQRCode: String = "Scanner QR Demo"
     
     var scanner : some View{
         CodeScannerView(codeTypes: [.qr], completion: { result in
